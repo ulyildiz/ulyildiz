@@ -1,5 +1,4 @@
-[![GitHub Stats](https://github-stats-extended.vercel.app/api/top-langs?username=anuraghazra&layout=compact&langs_count=6&theme=gruvbox_light)](https://github-stats-extended.vercel.app/api/top-langs?username=anuraghazra&layout=compact&langs_count=6&theme=gruvbox_light)
-
+[![GitHub Stats](https://github-stats-extended.vercel.app/api/top-langs?username=ulyildiz&layout=compact&langs_count=8&theme=gruvbox_light)](https://github-stats-extended.vercel.app/api/top-langs?username=ulyildiz&layout=compact&langs_count=8&theme=gruvbox_light)
 
 ## I will update sometime, I hope.
 
