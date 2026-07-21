@@ -1,0 +1,248 @@
+<svg width="1180" height="711" viewBox="0 0 1180 711" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" font-family="'SF Mono','Consolas','Menlo',monospace">
+<defs>
+
+    <clipPath id="canvasClip-light"><rect width="1180" height="711" rx="28"/></clipPath>
+    <clipPath id="panelClip-light"><rect width="1100" height="631" rx="22"/></clipPath>
+    <clipPath id="avatarClip-light"><circle r="30"/></clipPath>
+
+    <radialGradient id="blobBlue-light" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobCyan-light" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobGreen-light" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="avatarGrad-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="50%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#10B981"/>
+      <animate attributeName="x1" values="0%;100%;0%" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="100%;200%;100%" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="nameGrad-light" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+
+    <linearGradient id="shimmer-light" x1="0%" y1="0%" x2="100%" y2="100%" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="rgba(15,23,42,0.10)"/>
+      <stop offset="45%" stop-color="#0F172A" stop-opacity="0.5"/>
+      <stop offset="55%" stop-color="#0F172A" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="rgba(15,23,42,0.10)"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 -1;1 1;-1 -1" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <filter id="glowSoft-light" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowAvatar-light" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="blurBig-light" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="42"/>
+    </filter>
+    <filter id="noiseSoft-light" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.02 0"/>
+    </filter>
+
+    <linearGradient id="scanGrad-light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#06B6D4" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </linearGradient>
+    
+</defs>
+<g clip-path="url(#canvasClip-light)">
+
+    <circle cx="150" cy="110" r="240" fill="url(#blobBlue-light)" filter="url(#blurBig-light)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;40,25;0,0" dur="14s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="611" r="280" fill="url(#blobCyan-light)" filter="url(#blurBig-light)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;-35,-20;0,0" dur="17s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="760" cy="70" r="200" fill="url(#blobGreen-light)" filter="url(#blurBig-light)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;-20,30;0,0" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <rect width="1180" height="711" filter="url(#noiseSoft-light)"/>
+    <rect x="0" y="-60" width="1180" height="60" fill="url(#scanGrad-light)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,771" dur="9s" repeatCount="indefinite"/>
+    </rect>
+    
+
+    <circle cx="693" cy="184" r="1.8" fill="#2563EB" opacity="0.5">
+      <animateMotion path="M0,0 Q 9,-27 0,-54 Q -2,28 0,0" dur="7.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.6;0.15" dur="7.3s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="148" cy="549" r="1.6" fill="#06B6D4" opacity="0.5">
+      <animateMotion path="M0,0 Q 1,-28 0,-56 Q -10,12 0,0" dur="7.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.6;0.15" dur="7.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="899" cy="90" r="2.4" fill="#10B981" opacity="0.5">
+      <animateMotion path="M0,0 Q -11,-10 0,-20 Q 15,28 0,0" dur="7.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.6;0.15" dur="7.7s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="156" cy="620" r="2.1" fill="#2563EB" opacity="0.5">
+      <animateMotion path="M0,0 Q -11,-29 0,-58 Q 10,14 0,0" dur="7.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.6;0.15" dur="7.3s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="623" cy="459" r="1.5" fill="#06B6D4" opacity="0.5">
+      <animateMotion path="M0,0 Q -6,-13 0,-26 Q 18,15 0,0" dur="7.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.6;0.15" dur="7.7s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="241" cy="625" r="2.0" fill="#10B981" opacity="0.5">
+      <animateMotion path="M0,0 Q -19,-13 0,-26 Q 20,12 0,0" dur="8.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.6;0.15" dur="8.1s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="152" cy="663" r="1.6" fill="#2563EB" opacity="0.5">
+      <animateMotion path="M0,0 Q 2,-20 0,-40 Q 4,28 0,0" dur="11.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.6;0.15" dur="11.1s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="958" cy="400" r="1.7" fill="#06B6D4" opacity="0.5">
+      <animateMotion path="M0,0 Q 19,-23 0,-46 Q -20,28 0,0" dur="11.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.6;0.15" dur="11.8s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="644" cy="567" r="1.9" fill="#10B981" opacity="0.5">
+      <animateMotion path="M0,0 Q 3,-21 0,-42 Q 13,12 0,0" dur="9.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.6;0.15" dur="9.1s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="271" cy="554" r="1.8" fill="#2563EB" opacity="0.5">
+      <animateMotion path="M0,0 Q -16,-15 0,-30 Q 1,11 0,0" dur="11.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.15;0.6;0.15" dur="11.5s" repeatCount="indefinite"/>
+    </circle>
+<g transform="translate(40,40)">
+<rect width="1100" height="631" rx="22" fill="none" stroke="url(#shimmer-light)" stroke-width="1.4"/>
+<g clip-path="url(#panelClip-light)">
+<g transform="translate(550.0,245.5)" font-size="15" fill="#0F172A" opacity="0.045" text-anchor="middle">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,0;0,-6;0,0" dur="9s" repeatCount="indefinite"/>
+<text x="0" y="0" xml:space="preserve">        .-------------.        </text>
+<text x="0" y="20" xml:space="preserve">       /  .-.     .-.  \       </text>
+<text x="0" y="40" xml:space="preserve">      |  ( o )   ( o )  |      </text>
+<text x="0" y="60" xml:space="preserve">      |   '-'     '-'   |      </text>
+<text x="0" y="80" xml:space="preserve">       \   .-------.   /       </text>
+<text x="0" y="100" xml:space="preserve">        '--|       |--'        </text>
+<text x="0" y="120" xml:space="preserve">            '-------'          </text>
+</g>
+<g transform="translate(550.0,90)">
+<circle r="30" fill="url(#avatarGrad-light)" opacity="0.5" filter="url(#glowAvatar-light)"/>
+<image href="https://github.com/ulyildiz.png?size=200" xlink:href="https://github.com/ulyildiz.png?size=200" x="-30" y="-30" width="60" height="60" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatarClip-light)"/>
+<circle r="34" fill="none" stroke="url(#avatarGrad-light)" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.85">
+<animateTransform attributeName="transform" type="rotate" values="0;360" dur="18s" repeatCount="indefinite"/>
+</circle>
+</g>
+<text x="550.0" y="142" font-size="15" fill="#475569" text-anchor="middle" font-family="-apple-system,'Segoe UI',sans-serif">Hi 👋</text>
+<text x="550.0" y="168" font-size="28" font-weight="700" fill="url(#nameGrad-light)" text-anchor="middle" font-family="-apple-system,'Segoe UI',sans-serif">Ulas Berke Yildiz</text>
+<g transform="translate(420.0,214)">
+<text x="0" y="0" font-size="18" fill="#10B981">› </text>
+<g transform="translate(16,0)">
+<clipPath id="roleClip-light-0"><rect x="0" y="-15" width="0" height="22">
+      <animate attributeName="width" values="0.0;231.8;231.8;0.0;0.0" keyTimes="0.0;0.075;0.175;0.25;1.0" dur="16s" repeatCount="indefinite"/>
+    </rect></clipPath>
+<text x="0" y="0" font-size="18" fill="#0F172A" clip-path="url(#roleClip-light-0)">Mechanical Engineer</text>
+<clipPath id="roleClip-light-1"><rect x="0" y="-15" width="0" height="22">
+      <animate attributeName="width" values="0.0;0.0;219.6;219.6;0.0;0.0" keyTimes="0.0;0.25;0.325;0.425;0.5;1.0" dur="16s" repeatCount="indefinite"/>
+    </rect></clipPath>
+<text x="0" y="0" font-size="18" fill="#0F172A" clip-path="url(#roleClip-light-1)">Avionics Developer</text>
+<clipPath id="roleClip-light-2"><rect x="0" y="-15" width="0" height="22">
+      <animate attributeName="width" values="0.0;0.0;195.2;195.2;0.0;0.0" keyTimes="0.0;0.5;0.575;0.675;0.75;1.0" dur="16s" repeatCount="indefinite"/>
+    </rect></clipPath>
+<text x="0" y="0" font-size="18" fill="#0F172A" clip-path="url(#roleClip-light-2)">Embedded Systems</text>
+<clipPath id="roleClip-light-3"><rect x="0" y="-15" width="0" height="22">
+      <animate attributeName="width" values="0.0;0.0;244.0;244.0;0.0" keyTimes="0.0;0.75;0.825;0.925;1.0" dur="16s" repeatCount="indefinite"/>
+    </rect></clipPath>
+<text x="0" y="0" font-size="18" fill="#0F172A" clip-path="url(#roleClip-light-3)">Aerospace Enthusiast</text>
+<rect x="0" y="-14" width="3" height="19" fill="#2563EB">
+      <animate attributeName="x" values="0.0;231.8;231.8;0.0;219.6;219.6;0.0;195.2;195.2;0.0;244.0;244.0;0.0" keyTimes="0.0;0.075;0.175;0.25;0.325;0.425;0.5;0.575;0.675;0.75;0.825;0.925;1.0" dur="16s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+    </rect>
+</g></g>
+<line x1="510.0" y1="260" x2="590.0" y2="260" stroke="rgba(15,23,42,0.06)" stroke-width="1"/>
+<g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.9s" fill="freeze"/>
+      <text x="550.0" y="287" font-size="14" fill="#475569" text-anchor="middle">📍<tspan dx="8" font-weight="600" fill="#0F172A">Location:</tspan><tspan dx="6">Gebze, Kocaeli, Turkiye</tspan></text>
+    </g>
+<g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.35s" fill="freeze"/>
+      <text x="550.0" y="314" font-size="14" fill="#475569" text-anchor="middle">🎓<tspan dx="8" font-weight="600" fill="#0F172A">Education:</tspan><tspan dx="6">Mech. Eng. @ Gebze Technical University - 42 Turkiye</tspan></text>
+    </g>
+<g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.8s" fill="freeze"/>
+      <text x="550.0" y="341" font-size="14" fill="#475569" text-anchor="middle">🚀<tspan dx="8" font-weight="600" fill="#0F172A">Current Focus:</tspan><tspan dx="6">GTU-GOLGE - Ground Control &amp; Avionics</tspan></text>
+    </g>
+<g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="5.25s" fill="freeze"/>
+      <text x="550.0" y="368" font-size="14" fill="#475569" text-anchor="middle">🔗<tspan dx="8" font-weight="600" fill="#0F172A">Portfolio:</tspan><tspan dx="6">github.com/ulyildiz</tspan></text>
+    </g>
+<g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="5.7s" fill="freeze"/>
+      <text x="550.0" y="395" font-size="14" fill="#475569" text-anchor="middle">✉<tspan dx="8" font-weight="600" fill="#0F172A">Email:</tspan><tspan dx="6">your-email@gmail.com</tspan></text>
+    </g>
+<text x="550.0" y="450" font-size="12" letter-spacing="2" fill="#475569" text-anchor="middle" font-family="-apple-system,'Segoe UI',sans-serif">SKILLS</text>
+<g transform="translate(257.4,484)">
+      <rect width="42.6" height="26" rx="13" fill="rgba(15,23,42,0.035)" stroke="rgba(15,23,42,0.12)" stroke-width="1" filter="url(#glowSoft-light)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.4s" begin="0.0s" repeatCount="indefinite"/>
+      </rect>
+      <text x="21.3" y="17" font-size="12.5" fill="#0F172A" text-anchor="middle">C</text>
+    </g>
+<g transform="translate(312.0,484)">
+      <rect width="59.8" height="26" rx="13" fill="rgba(15,23,42,0.035)" stroke="rgba(15,23,42,0.12)" stroke-width="1" filter="url(#glowSoft-light)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.4s" begin="0.35s" repeatCount="indefinite"/>
+      </rect>
+      <text x="29.9" y="17" font-size="12.5" fill="#0F172A" text-anchor="middle">C++</text>
+    </g>
+<g transform="translate(383.8,484)">
+      <rect width="51.2" height="26" rx="13" fill="rgba(15,23,42,0.035)" stroke="rgba(15,23,42,0.12)" stroke-width="1" filter="url(#glowSoft-light)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.4s" begin="0.7s" repeatCount="indefinite"/>
+      </rect>
+      <text x="25.6" y="17" font-size="12.5" fill="#0F172A" text-anchor="middle">C#</text>
+    </g>
+<g transform="translate(447.0,484)">
+      <rect width="94.2" height="26" rx="13" fill="rgba(15,23,42,0.035)" stroke="rgba(15,23,42,0.12)" stroke-width="1" filter="url(#glowSoft-light)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.4s" begin="1.05s" repeatCount="indefinite"/>
+      </rect>
+      <text x="47.1" y="17" font-size="12.5" fill="#0F172A" text-anchor="middle">Node.js</text>
+    </g>
+<g transform="translate(553.2,484)">
+      <rect width="85.6" height="26" rx="13" fill="rgba(15,23,42,0.035)" stroke="rgba(15,23,42,0.12)" stroke-width="1" filter="url(#glowSoft-light)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.4s" begin="1.4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="42.8" y="17" font-size="12.5" fill="#0F172A" text-anchor="middle">SQLite</text>
+    </g>
+<g transform="translate(650.8,484)">
+      <rect width="59.8" height="26" rx="13" fill="rgba(15,23,42,0.035)" stroke="rgba(15,23,42,0.12)" stroke-width="1" filter="url(#glowSoft-light)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.4s" begin="1.75s" repeatCount="indefinite"/>
+      </rect>
+      <text x="29.9" y="17" font-size="12.5" fill="#0F172A" text-anchor="middle">CAD</text>
+    </g>
+<g transform="translate(722.6,484)">
+      <rect width="120.0" height="26" rx="13" fill="rgba(15,23,42,0.035)" stroke="rgba(15,23,42,0.12)" stroke-width="1" filter="url(#glowSoft-light)">
+        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3.4s" begin="2.1s" repeatCount="indefinite"/>
+      </rect>
+      <text x="60.0" y="17" font-size="12.5" fill="#0F172A" text-anchor="middle">Networking</text>
+    </g>
+<line x1="510.0" y1="542" x2="590.0" y2="542" stroke="rgba(15,23,42,0.06)" stroke-width="1"/>
+<text x="469.1" y="569" font-size="14" fill="#475569">guest@ulyildiz:~$</text>
+<rect x="621.9" y="556" width="9" height="15" fill="#2563EB">
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+</g>
+</g>
+</g>
+</svg>
